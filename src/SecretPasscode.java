@@ -61,6 +61,7 @@ public class SecretPasscode {
                 int random = (int)(Math.random() * 26 + 97);
                 out.write((char)random);
                 //Debugging
+                /**
                 if(random == 97) {
                     Process proc = Runtime.getRuntime().exec("notify-send '97 Spotted!'");
                     System.out.println("\n\n\n" + "97 Spotted at Test No. " + pass + "\n\n\n");
@@ -69,6 +70,7 @@ public class SecretPasscode {
                     Process proc = Runtime.getRuntime().exec("notify-send '122 Spotted!'");
                     System.out.println("\n\n\n" + "122 Spotted at Test No. " + pass + "\n\n\n");
                 }
+                 */
             }
         }
 
@@ -78,6 +80,7 @@ public class SecretPasscode {
                 int random = (int)(Math.random() * 26 + 65);
                 out.write((char)random);
                 //Debugging
+                /**
                 if(random == 65) {
                     Process proc = Runtime.getRuntime().exec("notify-send '65 Spotted!'");
                     System.out.println("\n\n\n" + "65 Spotted at Test No. " + pass + "\n\n\n");
@@ -86,6 +89,7 @@ public class SecretPasscode {
                     Process proc = Runtime.getRuntime().exec("notify-send '90 Spotted!'");
                     System.out.println("\n\n\n" + "90 Spotted at Test No. " + pass + "\n\n\n");
                 }
+                 */
             }
         }
 
@@ -104,6 +108,7 @@ public class SecretPasscode {
                 }
                 pass--;
                 //Debugging
+                /**
                 if(random == 65) {
                     Process proc = Runtime.getRuntime().exec("notify-send '65 Spotted!'");
                     System.out.println("\n\n\n" + "65 Spotted at Test No. " + pass + "\n\n\n");
@@ -112,6 +117,7 @@ public class SecretPasscode {
                     Process proc = Runtime.getRuntime().exec("notify-send '122 Spotted!'");
                     System.out.println("\n\n\n" + "122 Spotted at Test No. " + pass + "\n\n\n");
                 }
+                 */
             }
         }
 
@@ -121,6 +127,7 @@ public class SecretPasscode {
                 int random = (int)(Math.random() * 10 + 48);
                 out.write((char)random);
                 //Debugging
+                /**
                 if(random == 48) {
                     Process proc = Runtime.getRuntime().exec("notify-send '48 Spotted!'");
                     System.out.println("\n\n\n" + "48 Spotted at Test No. " + pass + "\n\n\n");
@@ -129,6 +136,7 @@ public class SecretPasscode {
                     Process proc = Runtime.getRuntime().exec("notify-send '57 Spotted!'");
                     System.out.println("\n\n\n" + "57 Spotted at Test No. " + pass + "\n\n\n");
                 }
+                 */
             }
         }
 
