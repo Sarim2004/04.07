@@ -1,1 +1,18 @@
 EfPapzgEBgrofEAePNNXhGnCFezBapEIZhGACzhtsFrOoccZmTjBTZLOvQRhPxsDMVIDhQciQEFulkalPrlpBobVfNiXDGAOmGRbqUsXvqiohzJxtxNUquUqnalHkRXnoLkptkxByrgQuCqbRyLfNPaAiPXrdxdPjebakOnrfkcrkqrUFuJANjUWshCXFOupDXkTnwtCYGqYdilGNnWsyfoXiBxLbFxLGZNBuQZMTUdXtbqwrpdlWoPlteSXLSqKIRJmRyuiPbQgEcXbfbbTkvBcgUUpdBGyKcnitUguNqYqgZnzUjZAPfULsIuSMBykHCEGkyMwFOILCAeVIgeBEEiicDIsVKqZJERGVWleIyqfPnvQULWjFgCEDuvwxVKyxfWiwPyGehWvfekkEWCApFgClccchzpewIToAcHYSdvgpMroMRHszdSuiQOmtZqioZdNXwWnwDHyGxWWAKkTmVHueGeTyFUwOkkBWiOPGUnwEXtpwbudPcSeqsSSzLjjRxOCFyzUHZQmYvJtfxMOlarLyRFeItqHYdgbBANarlTqtXHgUPzmabmmInxFyiBBgUudEMCbdCZdYLrYBdepWkMdIVUbvRqpGEQnVVgScgHScOOajrZsztHXHHDTdNSwbTqvbyQaMoBATVFflDToTPnUAFVZXqXrOxPmIsLFAloQDrmDfCUeVLcprFcpFIyXYBoBTHQmzoeABgVxsxdfBYiloItDvjgKzChppivZgbNOTyXJxFlJTgGojUHKwafkiRAHEnmvjEsPopWAmOmRyGgIJrqzMymCSJdrMNFARxlOZOJtSxZHKYQmeNFPArDcDsSKYWqnWDTLogHCJAmsZeGPWOIwKaSLzuJUHnOJeBNizObwlCTXyxiGnDWAdXXsgyQmKLoIJGCYDteuVPxzkgswmInAAZDGVZJPcTlolrtilhCdrRBWtMwHFbKilzAPnnWRXQQCyYmtSkRYXLBfVjOClNcPhtKsSLaaLtNS
+
+Scanner scanner = new Scanner(System.in);
+String input = scanner.nextLine();//get the next input line
+scanner.close();
+Integer value = null;
+try
+{
+    value = Integer.valueOf(input); //if value cannot be parsed, a NumberFormatException will be thrown
+}
+catch (final NumberFormatException e)
+{
+    System.out.println("Please enter an integer");
+}
+if(value != null)//check if value has been parsed or not
+{
+    //do something with the integer
+}

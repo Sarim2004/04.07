@@ -17,6 +17,7 @@ public class SecretPasscode {
         System.out.println("*   [4] Numerical                                    *");
         System.out.println("*   [5] Quit                                         *");
         System.out.println("******************************************************");
+
         //User's selection
         System.out.print("Enter Selection (1-5): ");
         int userSel = prompt.nextInt();
