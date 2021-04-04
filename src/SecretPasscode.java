@@ -156,7 +156,7 @@ public class SecretPasscode {
             }
              */
             for (int pass = 1; pass <= passLength; pass++) {
-                int random = (int)(Math.random() * 9 + 48);
+                int random = (int)(Math.random() * 10 + 48);
                 out.write((char)random);
                 //Debugging
                 if(random == 48) {
