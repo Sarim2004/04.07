@@ -2,12 +2,12 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class SecretPasscode {
     public static Scanner prompt = new Scanner(System.in);
-
-    public static void main(String[] args) throws IOException {
+        public static void main(String[] args) throws IOException, InputMismatchException, IllegalStateException, IllegalArgumentException {
         //Password Generator menu
         System.out.println("                Password Generator Menu               ");
         System.out.println("******************************************************");
