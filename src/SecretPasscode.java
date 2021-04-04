@@ -24,8 +24,8 @@ public class SecretPasscode {
             System.out.println("Quitting...");
             System.exit(1);
         }
-        while(userSel<0 || userSel>5) {
-            System.out.println("Invalid option. Please try again.\n");
+        while(userSel<=0 || userSel>5) {
+            System.out.println("  Invalid option. Please try again.\n");
             System.out.print("Enter Selection (1-5): ");
             userSel = prompt.nextInt();
             if(userSel==5) {
@@ -48,19 +48,79 @@ public class SecretPasscode {
         BufferedWriter out = new BufferedWriter(fileWriter);
 
         if(userSel==1) {
-
+            /**
+            for (int password = 0; password <= passLength; password++) {
+                System.out.print("Test No. " + password + ": ");
+                int random = (int) (Math.random() * 26 + 97);
+                System.out.println(random);
+                if (random == 97) {
+                    Process proc = Runtime.getRuntime().exec("notify-send '97 Spotted!'");
+                    System.out.println("\n\n\n" + "Zero Spotted at Test No. " + password + "\n\n\n");
+                }
+                if (random == 122) {
+                    Process proc = Runtime.getRuntime().exec("notify-send '122 Spotted!'");
+                    System.out.println("\n\n\n" + "Twenty-Six Spotted at Test No. " + password + "\n\n\n");
+                }
+            }
+             */
+            for (int pass = 0; pass <= passLength; pass++) {
+                int random = (int)(Math.random() * 26 + 97);
+                out.write((char)random);
+                //Debugging
+                if(random == 97) {
+                    Process proc = Runtime.getRuntime().exec("notify-send '97 Spotted!'");
+                    System.out.println("\n\n\n" + "97 Spotted at Test No. " + pass + "\n\n\n");
+                }
+                if(random == 122) {
+                    Process proc = Runtime.getRuntime().exec("notify-send '122 Spotted!'");
+                    System.out.println("\n\n\n" + "122 Spotted at Test No. " + pass + "\n\n\n");
+                }
+            }
         }
 
         if(userSel==2) {
-
+            /**
+            //Uppercase Characters
+            char C;  //Character Variable Declaration
+            for(int i=65;i<=90;i++) //Loop for printing A to Z character
+            {
+                C =(char)i; //Converting ASCII value to Character
+                System.out.println(i+"  =  "+C); //Displaying ASCII value and its equivalent Character
+            }
+            */
+            for (int pass = 0; pass <= passLength; pass++) {
+                int random = (int)(Math.random() * 26 + 65);
+                out.write((char)random);
+                //Debugging
+                if(random == 65) {
+                    Process proc = Runtime.getRuntime().exec("notify-send '65 Spotted!'");
+                    System.out.println("\n\n\n" + "65 Spotted at Test No. " + pass + "\n\n\n");
+                }
+                if(random == 90) {
+                    Process proc = Runtime.getRuntime().exec("notify-send '90 Spotted!'");
+                    System.out.println("\n\n\n" + "90 Spotted at Test No. " + pass + "\n\n\n");
+                }
+            }
         }
 
         if(userSel==3) {
-
+            for (int pass = 0; pass <= passLength; pass++) {
+                int random = (int)(Math.random() * 26 + 32);
+                out.write((char)random);
+                //Debugging
+                if(random == 65) {
+                    Process proc = Runtime.getRuntime().exec("notify-send '65 Spotted!'");
+                    System.out.println("\n\n\n" + "65 Spotted at Test No. " + pass + "\n\n\n");
+                }
+                if(random == 122) {
+                    Process proc = Runtime.getRuntime().exec("notify-send '122 Spotted!'");
+                    System.out.println("\n\n\n" + "122 Spotted at Test No. " + pass + "\n\n\n");
+                }
+            }
         }
 
         if(userSel==4) {
-            for (int password = 1; password <= passLength; password++) {
+            for (int pass = 1; pass <= passLength; pass++) {
                 int randnum = (int) (Math.random() * 10);
                 if (randnum <= 0) {
                     out.write("0");
@@ -89,8 +149,8 @@ public class SecretPasscode {
         fileWriter.flush();
 
 
-
-        System.out.println("Here are your randomly generated codes:");
+        //System.out.println("Here are your randomly generated codes:");
+        System.out.println("Here is your randomly generated code:");
         File myObj = new File("passfile.txt");
         Scanner myReader = new Scanner(myObj);
         while (myReader.hasNextLine()) {
@@ -105,3 +165,6 @@ public class SecretPasscode {
 //2.) Find out how to even make randomly generated passcodes
 //3.) Find out what is the syntax bullshit you need to learn to make the program exit code 0
 //4.) Print the outputs of userSel and passLength to a file to be read from again.
+
+//Todo: find if 1-4 is working
+//1 Works for sure

@@ -70,10 +70,37 @@ public class testing {
          */
         //Note: remove .close(); when actually using these above lines of code ^
 
-
+        //Some cool code that lists all the ascii values a-z (lowercase)
+        /**
         for (int i = 97; i <= 122; i++) { //Use Typecasting to get ASCII value
             char ch = (char)i;
             System.out.println(ch);
         }
+         */
+
+
+        //See ascii characters printed from A-Z & a-z
+
+        /**
+        //Uppercase Characters
+        char C;  //Character Variable Declaration
+        for(int i=65;i<=90;i++) //Loop for printing A to Z character
+        {
+            C =(char)i; //Converting ASCII value to Character
+            System.out.println(i+"  =  "+C); //Displaying ASCII value and its equivalent Character
+        }
+
+        System.out.println("\n\n\n");
+
+        //Lowercase Characters
+        char c;  //Character Variable Declaration
+        for(int i=97;i<=122;i++) //Loop for printing A to Z character
+        {
+            c =(char)i; //Converting ASCII value to Character
+            System.out.println(i+"  =  "+c); //Displaying ASCII value and its equivalent Character
+        }
+         */
+        char test = 97;
+        System.out.println(test);
     }
 }
