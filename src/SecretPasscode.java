@@ -17,8 +17,8 @@ public class SecretPasscode {
         System.out.print("Enter Selection (1-5): ");
         int userSel = prompt.nextInt();
         //Password Length
-        System.out.print("Password Length (6 or more): ")
-        int pass;
+        System.out.print("Password Length (6 or more): ");
+        int passLength = prompt.nextInt();
         System.out.println("\nThank you for using the Pass Code Generator.\n");
 
         System.out.println("Here are your randomly generated codes:");
