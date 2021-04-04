@@ -63,7 +63,7 @@ public class SecretPasscode {
                 }
             }
              */
-            for (int pass = 0; pass <= passLength; pass++) {
+            for (int pass = 1; pass <= passLength; pass++) {
                 int random = (int)(Math.random() * 26 + 97);
                 out.write((char)random);
                 //Debugging
@@ -88,7 +88,7 @@ public class SecretPasscode {
                 System.out.println(i+"  =  "+C); //Displaying ASCII value and its equivalent Character
             }
             */
-            for (int pass = 0; pass <= passLength; pass++) {
+            for (int pass = 1; pass <= passLength; pass++) {
                 int random = (int)(Math.random() * 26 + 65);
                 out.write((char)random);
                 //Debugging
@@ -104,9 +104,18 @@ public class SecretPasscode {
         }
 
         if(userSel==3) {
-            for (int pass = 0; pass <= passLength; pass++) {
-                int random = (int)(Math.random() * 26 + 32);
-                out.write((char)random);
+            for (int pass = 1; pass <= passLength; pass++) {
+                //int random = (int)(Math.random() * 57 + 65);
+                int random = (int)(Math.random() * 59 + 65);
+                if(random >= 65 && random <= 90) {
+                    out.write((char)random);
+                    pass++;
+                }
+                if(random >= 97 && random <= 122) {
+                    out.write((char)random);
+                    pass++;
+                }
+                pass--;
                 //Debugging
                 if(random == 65) {
                     Process proc = Runtime.getRuntime().exec("notify-send '65 Spotted!'");
@@ -120,6 +129,7 @@ public class SecretPasscode {
         }
 
         if(userSel==4) {
+            /**
             for (int pass = 1; pass <= passLength; pass++) {
                 int randnum = (int) (Math.random() * 10);
                 if (randnum <= 0) {
@@ -142,6 +152,20 @@ public class SecretPasscode {
                     out.write("8");
                 } else if (randnum <= 9) {
                     out.write("9");
+                }
+            }
+             */
+            for (int pass = 1; pass <= passLength; pass++) {
+                int random = (int)(Math.random() * 9 + 48);
+                out.write((char)random);
+                //Debugging
+                if(random == 48) {
+                    Process proc = Runtime.getRuntime().exec("notify-send '48 Spotted!'");
+                    System.out.println("\n\n\n" + "48 Spotted at Test No. " + pass + "\n\n\n");
+                }
+                if(random == 57) {
+                    Process proc = Runtime.getRuntime().exec("notify-send '57 Spotted!'");
+                    System.out.println("\n\n\n" + "57 Spotted at Test No. " + pass + "\n\n\n");
                 }
             }
         }
@@ -168,3 +192,6 @@ public class SecretPasscode {
 
 //Todo: find if 1-4 is working
 //1 Works for sure
+//2 Works for sure
+//3 Unsure
+//4 needs to be redone
