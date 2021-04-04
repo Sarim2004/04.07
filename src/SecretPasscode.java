@@ -5,6 +5,11 @@ import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * Author: Sarim Almamun
+ * Date: 04/04/21
+ * Purpose: Create a password for the user based on the selection they choose (Uppercase, Lowercase, or Numerical)
+ */
 public class SecretPasscode {
     public static Scanner prompt = new Scanner(System.in);
         public static void main(String[] args) throws IOException, InputMismatchException, IllegalStateException, IllegalArgumentException {
